@@ -1,0 +1,15 @@
+/**
+ * Header navigation specifics
+ **/
+
+header {
+  nav {
+    a {
+      color: #fff;
+
+      & + a {
+        margin-left: 1em;
+      }
+    }
+  }
+}

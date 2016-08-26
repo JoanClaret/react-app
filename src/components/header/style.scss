@@ -1,0 +1,17 @@
+/**
+ * Header
+ **/
+ 
+header {
+  align-items: center;
+  background-color: #2c97a6;
+  color: #fff;
+  display: flex;
+  padding: 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+  }
+}

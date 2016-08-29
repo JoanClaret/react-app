@@ -7,6 +7,33 @@ Such a good starting point to build your own app, with styled components, pages 
 - ES6 (Babel)
 - React (React-dom, react-router)
 
+## Folders structure:
+```
+src
+ ├─components
+ │   ├─header
+ │   │   ├─ index.js
+ │   │   └─ styles.scss
+ │   └─nav
+ │        ├─ index.js
+ │        └─ styles.scss
+ ├─pages
+ │   ├─about
+ │   │   ├─ index.js
+ │   │   └─ styles.scss
+ │   ├─gallery
+ │   │   ├─ index.js
+ │   │   └─ styles.scss
+ │   ├─home
+ │   │   ├─index.js
+ │   │   └─ styles.scss
+ │   └─layout
+ │       └─ index.js
+ └─scss
+      ├─ general.scss
+      └─ layout.scss
+```
+
 ## Getting started
 - Clone the repo
 - Run `npm i`

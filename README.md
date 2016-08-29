@@ -10,26 +10,26 @@ Such a good starting point to build your own app, with styled components, pages 
 ## Folders structure:
 ```
 src
- ├─components
- │   ├─header
+ ├─ components
+ │   ├─ header
  │   │   ├─ index.js
  │   │   └─ styles.scss
- │   └─nav
- │        ├─ index.js
- │        └─ styles.scss
- ├─pages
- │   ├─about
+ │   └─ nav
+ │       ├─ index.js
+ │       └─ styles.scss
+ ├─ pages
+ │   ├─ about
  │   │   ├─ index.js
  │   │   └─ styles.scss
- │   ├─gallery
+ │   ├─ gallery
  │   │   ├─ index.js
  │   │   └─ styles.scss
- │   ├─home
+ │   ├─ home
  │   │   ├─index.js
  │   │   └─ styles.scss
- │   └─layout
+ │   └─ layout
  │       └─ index.js
- └─scss
+ └─ scss
      ├─ general.scss
      └─ layout.scss
 ```

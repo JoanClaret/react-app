@@ -30,8 +30,8 @@ src
  │   └─layout
  │       └─ index.js
  └─scss
-      ├─ general.scss
-      └─ layout.scss
+     ├─ general.scss
+     └─ layout.scss
 ```
 
 ## Getting started

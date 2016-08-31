@@ -13,7 +13,7 @@ export default class Select extends React.Component {
     console.log("Selected: " + value);
   }
   render() {
-    var selectOptions = this.props.data.map(function(animal) {
+    let selectOptions = this.props.data.map(function(animal) {
       return (
         <option key={animal.type} value={animal.type}>{animal.sound}</option>
       )

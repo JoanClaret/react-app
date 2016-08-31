@@ -4,9 +4,13 @@ import React from 'react';
 export default class Animal extends React.Component {
 
   render() {
+
+    // default image?
+    let url = this.props.avatarUrl ? this.props.avatarUrl : './../dist/img/default.jpg';
+
     return(
       <div className="avatar">
-        <img className="avatar--image" src={"./src/img/" + this.props.selectedAvatar + ".jpg"} title={this.props.selectedAvatar} width="100"/>
+        <img className="avatar--image" src={url} title={this.props.title} width="100"/>
       </div>
     )
   }

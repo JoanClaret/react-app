@@ -3,10 +3,11 @@ import React from 'react';
 import Select from './../../components/select';
 import Avatar from './../../components/avatar';
 
-var profiles = [
-  {type: 'dog', sound: 'Rooff'},
-  {type: 'cat', sound: 'Meow'},
-  {type: 'lamb', sound: 'Baaa'}
+let profiles = [
+  {type: 'dog', sound: 'Rooff', url:'./../dist/img/dog.jpg'},
+  {type: 'cat', sound: 'Meow', url:'./../dist/img/cat.jpg'},
+  {type: 'lamb', sound: 'Baaa', url:'./../dist/img/lamb.jpg'},
+  {type: 'duck', sound: 'Cuack'}
 ];
 
 export default class Profiles extends React.Component {
@@ -14,21 +15,23 @@ export default class Profiles extends React.Component {
     super()
     this.state = {
       selectedUser: 'cat', // initial state
-			data: profiles // set data to pass trough the component
+			data: profiles
     }
     this.update = this.update.bind(this)
   }
   update(value){
     this.setState({
-      selectedUser: value
+      selectedUser: value,
+			selectedUrl: this.state.selectedUrl
     })
   }
   render() {
+		var url = profiles.filter(x => x.type == this.state.selectedUser )[0].url;
     return(
       <div>
         <h1>Profiles</h1>
         <Select data={this.state.data} value={this.state.selectedUser} onValueChange={this.update} />
-        <Avatar selectedAvatar={this.state.selectedUser} />
+        <Avatar avatarUrl={url} title={this.state.selectedUser}/>
       </div>
     )
   }

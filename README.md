@@ -36,7 +36,7 @@ src
  │   │   └─ styles.scss
  │   ├─ layout
  │   │   └─ index.js
- │   └─ profile
+ │   └─ profiles
  │       └─ index.js
  └─ scss
      ├─ general.scss

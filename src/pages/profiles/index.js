@@ -7,7 +7,7 @@ let profiles = [
   {type: 'dog', sound: 'Rooff', url:'./../dist/img/dog.jpg'},
   {type: 'cat', sound: 'Meow', url:'./../dist/img/cat.jpg'},
   {type: 'lamb', sound: 'Baaa', url:'./../dist/img/lamb.jpg'},
-  {type: 'duck', sound: 'Cuack'}
+  {type: 'duck', sound: 'Quack'}
 ];
 
 export default class Profiles extends React.Component {

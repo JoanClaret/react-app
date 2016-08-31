@@ -16,6 +16,7 @@ import Layout from './src/pages/layout';
 import Home from './src/pages/home';
 import Gallery from './src/pages/gallery';
 import About from './src/pages/about';
+import Profiles from './src/pages/profiles';
 
 
 /**
@@ -29,6 +30,7 @@ export default class App extends React.Component {
           <IndexRoute component={Home} /> // load <Home /> inside <Layout />
           <Route path='gallery' component={Gallery} /> // if route path is '/gallery' then load <Gallery />
           <Route path='about' component={About} /> // if route path is '/about' then load <About />
+          <Route path='profiles' component={Profiles} /> // if route path is '/about' then load <About />
         </Route>
 			</Router>
     )

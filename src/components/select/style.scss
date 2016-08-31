@@ -1,0 +1,43 @@
+/**
+ * Select
+ */
+
+.select{
+  background-color:#fff;
+  border: 1px solid #ccc;
+  display: block;
+  line-height: 3em;
+  width: 100%;
+  font-size: 1em;
+  position:relative;
+  border-radius: 3px;
+
+  &:after {
+    content:' ';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -4px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 8px solid #ccc;
+  }
+
+  select {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 1em;
+    height: 3em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 15px;
+  }
+
+  :focus {
+    outline: none;
+  }
+}

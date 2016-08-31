@@ -1,0 +1,5 @@
+[
+  {type: 'dog', sound: 'Rooff'},
+  {type: 'cat', sound: 'Meow'},
+  {type: 'lamb', sound: 'Baaa'}
+]

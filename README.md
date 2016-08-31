@@ -1,6 +1,8 @@
 # Component ready React app
 Such a good starting point to build your own app, with styled components, pages and routing.
 
+
+
 ## Tech
 - SCSS
 - Webpack
@@ -11,10 +13,15 @@ Such a good starting point to build your own app, with styled components, pages 
 ```
 src
  ├─ components
+ │   ├─ avatar
+ │   │   └─ index.js
  │   ├─ header
  │   │   ├─ index.js
  │   │   └─ styles.scss
- │   └─ nav
+ │   ├─ nav
+ │   │   ├─ index.js
+ │   │   └─ styles.scss
+ │   └─ select
  │       ├─ index.js
  │       └─ styles.scss
  ├─ pages
@@ -27,7 +34,9 @@ src
  │   ├─ home
  │   │   ├─index.js
  │   │   └─ styles.scss
- │   └─ layout
+ │   ├─ layout
+ │   │   └─ index.js
+ │   └─ profile
  │       └─ index.js
  └─ scss
      ├─ general.scss

@@ -8,6 +8,7 @@ export default class Nav extends React.Component {
     return(
       <nav>
         <IndexLink activeClassName='active' to='/'>Home</IndexLink>
+        <Link activeClassName='active' to='/profiles'>Profiles</Link>
         <Link activeClassName='active' to='/gallery'>Gallery</Link>
         <Link activeClassName='active' to='/about'>About</Link>
       </nav>

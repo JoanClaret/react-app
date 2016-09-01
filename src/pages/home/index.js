@@ -1,6 +1,7 @@
 require('./style.scss');
 
 import React from 'react';
+import List from './../../components/list';
 
 
 export default class Home extends React.Component {
@@ -16,6 +17,7 @@ export default class Home extends React.Component {
         in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
         officia deserunt mollit anim id est laborum.</p>
+        <List />
       </div>
     )
   }

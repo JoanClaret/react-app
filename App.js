@@ -19,6 +19,29 @@ import About from './src/pages/about';
 import Profiles from './src/pages/profiles';
 
 
+
+/**
+ * Get users
+ **/
+function fetchUsers() {
+  return Promise.resolve(
+      [
+        {type: 'dog', sound: 'Rooff', url:'./../dist/img/dog.jpg'},
+        {type: 'cat', sound: 'Meow', url:'./../dist/img/cat.jpg'},
+        {type: 'lamb', sound: 'Baaa', url:'./../dist/img/lamb.jpg'},
+        {type: 'duck', sound: 'Quack'}
+      ]
+  )
+}
+
+fetchUsers()
+  .then(users => {
+    console.log(users)
+  })
+
+
+
+
 /**
  * App
  **/

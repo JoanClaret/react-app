@@ -1,7 +1,9 @@
-require('./style.scss');
 
 import React from 'react';
-import Input from '../input';
+import List from './list';
+import ListFilter from './filter';
+import ListAdd from './add';
+
 
 let planets = [
 	{name: 'Mercury', diameter: '4,879'},
@@ -13,13 +15,25 @@ let planets = [
 	{name: 'Neptune', diameter: '49,244'},
 	{name: 'Pluto', diameter: '2,374'}
 ]
-export default class List extends React.Component{
+
+export default class ListContainer extends React.Component{
+
 	constructor(){
 		super()
 		this.state = {
 			data: planets
-    }
+		}
 	}
+
+	handleAddItem(value){
+		console.log('uola')
+		//this.setState(newState);
+		this.setState({
+			data: this.state.data.concat({name: value})
+		})
+
+	}
+
 	handleInputChange(value){
 		// console.log(value);
 		this.setState ({
@@ -29,15 +43,13 @@ export default class List extends React.Component{
 
 	render() {
 		return(
-
 			<div>
 				<h2>Planets list</h2>
-				<Input onChange={this.handleInputChange.bind(this)} placeholder='Filter planets list'/>
-				<ul className="list">
-					{this.state.data.map((data, index) => (
-							<li key={index} className="list--item">{data.name} - {data.diameter} km</li>
-					))}
-				</ul>
+
+					<ListFilter placeholder='Filter planets list' onValueChange={this.handleInputChange.bind(this)}/>
+					<List items={this.state.data}/>
+					<ListAdd onAddItem={this.handleAddItem.bind(this)}/>
+
 			</div>
 		)
 	}
